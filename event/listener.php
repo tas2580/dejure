@@ -76,7 +76,7 @@ class listener implements EventSubscriberInterface
 	*/
 	public function page_footer($event)
 	{
-		if($event['run_cron'])
+		if ($event['run_cron'])
 		{
 			$sql = 'DELETE FROM ' . $this->dejure_table . '
 				WHERE dejure_time < ' . (int) ($this->config['tas2580_dejure_cache_time'] - time());
@@ -93,7 +93,7 @@ class listener implements EventSubscriberInterface
 	private function link_text($text)
 	{
 		$new_text = $this->read_cache($text);
-		if(empty($new_text))
+		if (empty($new_text))
 		{
 			// No cache get the text
 			return $this->get_link($text);
