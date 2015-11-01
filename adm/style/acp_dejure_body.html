@@ -1,0 +1,41 @@
+<!-- INCLUDE overall_header.html -->
+<h1>{L_ACP_DEJURE_TITLE}</h1>
+<p>{L_ACP_DEJURE_EXPLAIN}</p>
+
+<form method="post" action="{U_ACTION}">
+
+<fieldset>
+	<legend>{L_SETTINGS}</legend>
+	<dl>
+		<dt><label for="link_style">{L_ACP_LINK_STYLE}</label><br /><span>{L_ACP_LINK_STYLE_EXPLAIN}</span></dt>
+		<dd>
+			<select id="link_style" name="link_style">
+				<option value="weit"{LINK_STYLE_WEIT}>{L_LINK_STYLE_WEIT}</option>
+				<option value="schmal"{LINK_STYLE_SCHMAL}>{L_LINK_STYLE_SCHMAL}</option>
+			</select>
+		</dd>
+	</dl>
+	<dl>
+		<dt><label for="class">{L_ACP_CLASS}</label><br /><span>{L_ACP_CLASS_EXPLAIN}</span></dt>
+		<dd><input type="text" id="class" name="class" value="{CLASS}" /></dd>
+	</dl>
+	<dl>
+		<dt><label for="buzer">{L_ACP_BUZER}</label><br /><span>{L_ACP_BUZER_EXPLAIN}</span></dt>
+		<dd><input type="checkbox" id="buzer" name="buzer" value="1"{BUZER} /></dd>
+	</dl>
+	<dl>
+		<dt><label for="cache_time">{L_ACP_CACHE_TIME}</label><br /><span>{L_ACP_CACHE_TIME_EXPLAIN}</span></dt>
+		<dd><input type="number" id="cache_time" name="cache_time" value="{CACHE_TIME}" /></dd>
+	</dl>
+</fieldset>
+
+<fieldset>
+	<legend>{L_ACP_SUBMIT}</legend>
+	<p class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+	</p>
+	{S_FORM_TOKEN}
+</fieldset>
+</form>
+<!-- INCLUDE overall_footer.html -->

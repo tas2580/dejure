@@ -1,0 +1,12 @@
+parameters:
+    tables.dejure: %core.table_prefix%dejure
+
+services:
+    tas2580.contentsecurety.listener:
+        class: tas2580\dejure\event\listener
+        arguments:
+            - @config
+            - @dbal.conn
+            - %tables.dejure%
+        tags:
+            - { name: event.listener }
