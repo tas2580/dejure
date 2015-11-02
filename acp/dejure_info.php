@@ -16,7 +16,7 @@ class dejure_info
 		return array(
 			'filename'		=> '\tas2580\dejure\dejure_module',
 			'title'			=> 'ACP_DEJURE_TITLE',
-			'version'		=> '0.1.0',
+			'version'		=> '0.1.1',
 			'modes'		=> array(
 				'settings'    => array(
 					'title'		=> 'ACP_DEJURE_TITLE',

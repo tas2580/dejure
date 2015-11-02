@@ -60,8 +60,6 @@ class listener implements EventSubscriberInterface
 	*/
 	public function viewtopic_modify_post_row($event)
 	{
-		define('DJO_VERSION', '2.11');
-
 		$row = $event['post_row'];
 		$row['MESSAGE'] = $this->link_text($row['MESSAGE']);
 		$event['post_row'] = $row;
@@ -126,7 +124,7 @@ class listener implements EventSubscriberInterface
 
 		// generate the post header
 		$header = 'POST /dienste/vernetzung/vernetzen HTTP/1.1'."\r\n";
-		$header .= 'User-Agent: ' . $this->config['server_name'] . ' (PHP-Vernetzung ' . DJO_VERSION . ')'."\r\n";
+		$header .= 'User-Agent: ' . $this->config['server_name'] . ' (phpBB3-Vernetzung 0.1.1)'."\r\n";
 		$header .= 'Content-type: application/x-www-form-urlencoded'."\r\n";
 		$header .= 'Content-length: ' . strlen($content) . "\r\n";
 		$header .= 'Host: rechtsnetz.dejure.org'."\r\n";

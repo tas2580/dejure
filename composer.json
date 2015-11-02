@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Linked laws with dejure.org",
 	"homepage": "https://tas2580.net/downloads/phpbb-dejure/",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"keywords": ["phpbb", "extension", "dejure", "law"],
 	"license": "GPL-2.0",
 	"authors": [
