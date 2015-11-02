@@ -25,11 +25,6 @@
 		"display-name": "dejure.org Vernetzung",
 		"soft-require": {
 			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
-		},
-		"version-check": {
-			"host": "raw.githubusercontent.com",
-			"directory": "/tas2580/dejure/master",
-			"filename": "version-check.json"
 		}
 	}
 }
