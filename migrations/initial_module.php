@@ -19,6 +19,7 @@ class initial_module extends \phpbb\db\migration\migration
 			array('config.add', array('tas2580_dejure_class', '')),
 			array('config.add', array('tas2580_dejure_buzer', '0')),
 			array('config.add', array('tas2580_dejure_cache_time', '4')),
+			array('config.add', array('tas2580_dejure_target', '')),
 
 			// Add ACP module
 			array('module.add', array(

@@ -37,6 +37,7 @@ class dejure_module
 			$config->set('tas2580_dejure_class', $request->variable('class', ''));
 			$config->set('tas2580_dejure_buzer', $request->variable('buzer', 0));
 			$config->set('tas2580_dejure_cache_time', $request->variable('cache_time', 4));
+			$config->set('tas2580_dejure_target', $request->variable('target', ''));
 
 			$sql = 'DELETE FROM ' . $table_prefix . 'dejure';
 			$db->sql_query($sql);
@@ -49,6 +50,7 @@ class dejure_module
 			'LINK_STYLE_WEIT'		=> ($config['tas2580_dejure_link_style'] === 'weit') ? ' selected="selected"' : '',
 			'LINK_STYLE_SCHMAL'	=> ($config['tas2580_dejure_link_style'] === 'schmal') ? ' selected="selected"' : '',
 			'CLASS'				=> $config['tas2580_dejure_class'],
+			'TARGET'				=> $config['tas2580_dejure_target'],
 			'BUZER'				=> ($config['tas2580_dejure_buzer'] == 1) ? ' checked="checked"' : '',
 			'CACHE_TIME'			=> $config['tas2580_dejure_cache_time'],
 		));

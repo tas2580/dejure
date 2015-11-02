@@ -121,6 +121,7 @@ class listener implements EventSubscriberInterface
 			'&Anbieterkennung=' . $this->config['server_name'] . '__' . $this->config['board_contact'] .
 			'&format=' . $this->config['tas2580_dejure_link_style'] .
 			'&class=' . $this->config['tas2580_dejure_class'] .
+			'&target= ' . $this->config['tas2580_dejure_target'] .
 			'&buzer=' . $this->config['tas2580_dejure_buzer'];
 
 		// generate the post header
